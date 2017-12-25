@@ -7,12 +7,14 @@ import { AboutPage } from '../pages/about/about';
 import { ContactPage } from '../pages/contact/contact';
 import { HomePage } from '../pages/home/home';
 import { TabsPage } from '../pages/tabs/tabs';
+import { ArtistDetail } from '../pages/artist-detail/artist-detail';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
 @NgModule({
   declarations: [
+    ArtistDetail,
     MyApp,
     AboutPage,
     ContactPage,
@@ -25,6 +27,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   ],
   bootstrap: [IonicApp],
   entryComponents: [
+    ArtistDetail,
     MyApp,
     AboutPage,
     ContactPage,

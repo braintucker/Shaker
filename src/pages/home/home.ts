@@ -7,8 +7,12 @@ import {ArtistDetail} from '../artist-detail/artist-detail'
   templateUrl: 'home.html'
 })
 export class HomePage {
-
-  items = [ 'Artist1', 'Artist2', 'Artist3', 'Artist4'];
+  artists = [
+    { description: 'Artist1'},
+    { description: 'Artist2'},
+    { description: 'Artist3'},
+    { description: 'Artist4'}
+    ];
 
   constructor(
     public navCtrl: NavController,
@@ -16,8 +20,8 @@ export class HomePage {
 
   }
 
-  selectItem(item) {
-    this.modalCtrl.create(ArtistDetail, { item: item }).present();
+  selectArtist(artist) {
+    this.modalCtrl.create(ArtistDetail, { artist: artist }).present();
   }
 
 }

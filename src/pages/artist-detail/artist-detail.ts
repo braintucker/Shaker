@@ -6,13 +6,13 @@ import { NavParams, ViewController  } from 'ionic-angular';
 })
 export class ArtistDetail {
 
-  item;
+  artist;
 
   constructor(
     navParams: NavParams,
     private viewCtrl: ViewController) {
 
-    this.item = navParams.get('item');
+    this.artist = navParams.get('artist');
   }
 
   cancel() {

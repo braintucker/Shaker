@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
+import {ArtistDetail} from '../artist-detail/artist-detail'
 
 @Component({
   selector: 'page-home',
@@ -14,6 +15,7 @@ export class HomePage {
   }
 
   selectItem(item) {
+    this.navCtrl.push(ArtistDetail, { item: item  });
     console.log("button was clicked!");
   }
 

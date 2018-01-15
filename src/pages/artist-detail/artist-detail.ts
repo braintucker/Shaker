@@ -1,13 +1,15 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { NavParams  } from 'ionic-angular';
 
 @Component({
   templateUrl: 'artist-detail.html'
 })
 export class ArtistDetail {
 
-  constructor(public navCtrl: NavController) {
+  item;
 
+  constructor(navParams: NavParams) {
+    this.item = navParams.get('item');
   }
 
 
